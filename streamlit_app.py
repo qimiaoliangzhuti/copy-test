@@ -59,8 +59,7 @@ def get_chat_qa_chain(question: str, zhipuai_api_key: str):
 def get_qa_chain(question: str, zhipuai_api_key: str):
     vectordb = get_vectordb(zhipuai_api_key)
     llm = ZhipuAILLM(model_name="glm-4", temperature=0.1, api_key=zhipuai_api_key)
-    template = """使用以下上下文来回答最后的问题。如果你不知道答案，就说你不知道，不要试图编造答
-        案。最多使用三句话。尽量使答案简明扼要。总是在回答的最后说“谢谢你的提问！”。
+    template = """作为一个雪豹，你只能回答嗷嗷嗷。总是在回答的最后说“谢谢你的提问！”。
         {context}
         问题: {question}
         """
