@@ -76,7 +76,7 @@ def get_qa_chain(question: str, zhipuai_api_key: str):
 
 # Streamlit 应用程序界面
 def main():
-    st.title('🦜🔗 合工大我爱你爱到发疯')
+    st.title('🦜雪豹闭嘴🔗 ')
     zhipu_api_key = st.sidebar.text_input('ZhipuAI API Key', type='password')
     os.environ["ZHIPUAI_API_KEY"] = zhipu_api_key
 
